@@ -1,5 +1,6 @@
-package model;
+package model.entity.calendario;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SemanaAcademica extends Periodo{
@@ -7,6 +8,6 @@ public class SemanaAcademica extends Periodo{
     
     public SemanaAcademica(String _name, String _description, LocalDate _initialDate, LocalDate _finalDate){
         super(_name, _description, _initialDate, _finalDate);
-        events  = new List<Evento>();
+        events  = new ArrayList<Evento>();
     }
 }

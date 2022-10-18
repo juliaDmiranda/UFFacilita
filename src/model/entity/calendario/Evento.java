@@ -1,4 +1,4 @@
-package model;
+package model.entity.calendario;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -9,8 +9,10 @@ public class Evento {
     LocalDate date;
     LocalTime time;
     List<String> hosts;
+    
+    public Evento(){}
 
-    private Evento(String _name, String _description, LocalDate _date, LocalTime _time, List<String> _hosts){
+    public Evento(String _name, String _description, LocalDate _date, LocalTime _time, List<String> _hosts){
         name        = _name;
         description = _description;
         date        = _date;
