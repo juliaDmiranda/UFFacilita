@@ -1,6 +1,6 @@
 package controller.contato;
 
-import model.entity.contato.Contato;
+import model.contato.Contato;
 
 public class ContatoController {
     public Contato contato;

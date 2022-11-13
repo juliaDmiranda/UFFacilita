@@ -1,5 +1,5 @@
 package controller.calendario;
-import model.entity.calendario.Periodo;
+import model.calendario.Periodo;
 
 public class PeriodoController {
     public Periodo periodo;

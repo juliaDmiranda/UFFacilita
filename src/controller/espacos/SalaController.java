@@ -1,5 +1,5 @@
 package controller.espacos;
-import model.entity.espacos.Sala;
+import model.espacos.Sala;
 
 public class SalaController {
     public Sala sala;
