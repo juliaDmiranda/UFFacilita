@@ -1,3 +1,24 @@
 {
-
+  "ano" : 2022,
+  "semestre" : 2,
+  "datas" : [
+    {
+      "nome" : "",
+      "descricao" : "",
+      "dataInicio" : "",
+      "dataTermino" : ""
+    },
+    {
+      "nome" : "",
+      "descricao" : "",
+      "dataInicio" : "",
+      "dataTermino" : ""
+    },
+    {
+      "nome" : "",
+      "descricao" : "",
+      "dataInicio" : "",
+      "dataTermino" : ""
+    }
+  ]
 }
