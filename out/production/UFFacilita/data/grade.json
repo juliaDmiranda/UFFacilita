@@ -1,0 +1,32 @@
+{
+  "semestre" : "2022.2",
+  "disciplinas" : [
+    {
+      "professor" : "",
+      "nome" : "asdas",
+      "horario" : "",
+      "sala" : {
+        "numero" : 1,
+        "andar" : 1
+      }
+    },
+    {
+      "professor" : "",
+      "nome" : "gfwer",
+      "horario" : "",
+      "sala" : {
+        "numero" : 1,
+        "andar" : 1
+      }
+    },
+    {
+      "professor" : "",
+      "nome" : "qweq",
+      "horario" : "",
+      "sala" : {
+        "numero" : 1,
+        "andar" : 1
+      }
+    }
+  ]
+}
