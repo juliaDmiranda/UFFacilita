@@ -3,21 +3,30 @@
   "disciplinas" : [
     {
       "professor" : "",
-      "nome" : "",
+      "nome" : "asdas",
       "horario" : "",
-      "sala" : ""
+      "sala" : {
+        "numero" : 1,
+        "andar" : 1
+      }
     },
     {
       "professor" : "",
-      "nome" : "",
+      "nome" : "gfwer",
       "horario" : "",
-      "sala" : ""
+      "sala" : {
+        "numero" : 1,
+        "andar" : 1
+      }
     },
     {
       "professor" : "",
-      "nome" : "",
+      "nome" : "qweq",
       "horario" : "",
-      "sala" : ""
+      "sala" : {
+        "numero" : 1,
+        "andar" : 1
+      }
     }
   ]
 }

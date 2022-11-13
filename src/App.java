@@ -1,5 +1,10 @@
+import model.espacos.Grade;
+
+import java.sql.SQLOutput;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Grade grade = new Grade();
+        grade = (Grade) grade.getInfo();
     }
 }

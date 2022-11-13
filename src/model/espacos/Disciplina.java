@@ -12,4 +12,14 @@ public class Disciplina extends BaseData {
         this.horario = horario;
         this.sala = sala;
     }
+
+    @Override
+    public String toString() {
+        return "Disciplina{" +
+                "professor='" + professor + '\'' +
+                ", nome='" + nome + '\'' +
+                ", horario='" + horario + '\'' +
+                ", sala=" + sala +
+                '}';
+    }
 }
