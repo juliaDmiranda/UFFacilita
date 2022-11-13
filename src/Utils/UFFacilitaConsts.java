@@ -1,4 +1,4 @@
-package model.Utils;
+package Utils;
 
 public enum UFFacilitaConsts {
     GRADE_JSON_PATH("C:\\RepositoriosFaculdade\\UFFacilita\\src\\data\\grade.json"),
