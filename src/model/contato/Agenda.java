@@ -2,6 +2,9 @@ package model.contato;
 import model.BaseData;
 import model.ServiceInterface;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,8 +26,7 @@ public class Agenda extends BaseData implements ServiceInterface {
         return this;
     }
 
-    private void LerArquivo(String fileName)
-    {
+    private void LerArquivo(String fileName) {
         JSONObject jsonObject;
         JSONParser parser = new JSONParser();
         try {
@@ -37,18 +39,17 @@ public class Agenda extends BaseData implements ServiceInterface {
 
             contatos = new ArrayList<Contato>();
 
-            for(int i = 0; i < jsonList.size(); i ++) {
-                String tipo     = (String) jsonList.get(i).get("tipo");
-                String nome     = (String) jsonList.get(i).get("nome");
-                String email    = (String) jsonList.get(i).get("email");
+            for (int i = 0; i < jsonList.size(); i++) {
+                String tipo = (String) jsonList.get(i).get("tipo");
+                String nome = (String) jsonList.get(i).get("nome");
+                String email = (String) jsonList.get(i).get("email");
                 String telefone = (String) jsonList.get(i).get("telefone");
 
                 Contato c = new Contato(tipo, nome, email, telefone);
                 contatos.add(c);
             }
             //Trata as exceptions que podem ser lançadas no decorrer do processo
-        }
-        catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
@@ -56,4 +57,5 @@ public class Agenda extends BaseData implements ServiceInterface {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+    }
 }
