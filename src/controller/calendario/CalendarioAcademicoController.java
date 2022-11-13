@@ -1,5 +1,5 @@
 package controller.calendario;
-import model.entity.calendario.CalendarioAcademico;
+import model.calendario.CalendarioAcademico;
 
 public class CalendarioAcademicoController {
     private CalendarioAcademico calendarioAcademico;

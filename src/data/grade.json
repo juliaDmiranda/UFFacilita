@@ -1,0 +1,23 @@
+{
+  "semestre" : "2022.2",
+  "disciplinas" : [
+    {
+      "professor" : "",
+      "nome" : "",
+      "horario" : "",
+      "sala" : ""
+    },
+    {
+      "professor" : "",
+      "nome" : "",
+      "horario" : "",
+      "sala" : ""
+    },
+    {
+      "professor" : "",
+      "nome" : "",
+      "horario" : "",
+      "sala" : ""
+    }
+  ]
+}
