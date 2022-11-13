@@ -1,0 +1,19 @@
+{
+    "nome"          :"",
+    "descricao"     :"",
+    "initialDate"   :"",
+    "finalDate"     :"",
+    "events":
+    [
+        {
+            "nome":"",
+            "descricao":"",
+            "data":"",
+            "time":"",
+            "hosts":[
+                "",
+                ""]
+        }
+
+    ]
+}

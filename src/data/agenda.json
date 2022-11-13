@@ -1,3 +1,16 @@
 {
-
+	"contatos": [
+        {
+        "tipo" 	:"",
+        "nome" 	:"",
+        "email"	:"",
+        "telefone":""
+        },
+        {
+        "tipo" 	:"",
+        "nome" 	:"",
+        "email"	:"",
+        "telefone"	:""
+        }
+    ]
 }
