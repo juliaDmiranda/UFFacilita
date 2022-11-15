@@ -10,5 +10,19 @@ public class Contato {
         this.telefone = telefone;
     }
 
-    
+    public String getTipo() {
+        return tipo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
 }

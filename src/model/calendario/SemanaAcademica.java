@@ -25,6 +25,26 @@ public class SemanaAcademica extends BaseData implements ServiceInterface {
         events  = new ArrayList<Evento>();
     }
 
+    public Long getAno() {
+        return ano;
+    }
+
+    public Long getSemestre() {
+        return semestre;
+    }
+
+    public LocalDate getInitialDate() {
+        return initialDate;
+    }
+
+    public LocalDate getFinalDate() {
+        return finalDate;
+    }
+
+    public List<Evento> getEvents() {
+        return events;
+    }
+
     @Override
     public BaseData getInfo() {
         LerArquivo(UFFacilitaConsts.SEMANA_JSON_PATH.getValue());

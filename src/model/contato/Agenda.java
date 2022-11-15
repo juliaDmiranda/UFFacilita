@@ -20,6 +20,10 @@ public class Agenda extends BaseData implements ServiceInterface {
         contatos = new ArrayList<Contato>();
     }
 
+    public List<Contato> getContatos() {
+        return contatos;
+    }
+
     @Override
     public BaseData getInfo() {
         LerArquivo(UFFacilitaConsts.AGENDA_JSON_PATH.getValue());

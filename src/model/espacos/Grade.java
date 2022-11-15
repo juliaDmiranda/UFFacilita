@@ -18,6 +18,14 @@ public class Grade extends BaseData implements ServiceInterface {
     String semestreVigente;
     List<Disciplina> disciplinas;
 
+    public String getSemestreVigente() {
+        return semestreVigente;
+    }
+
+    public List<Disciplina> getDisciplinas() {
+        return disciplinas;
+    }
+
     @Override
     public BaseData getInfo() {
         LerArquivo(UFFacilitaConsts.GRADE_JSON_PATH.getValue());

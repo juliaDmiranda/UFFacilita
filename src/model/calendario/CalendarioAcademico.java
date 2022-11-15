@@ -24,6 +24,17 @@ public class CalendarioAcademico extends BaseData implements ServiceInterface {
         this.datas    = new ArrayList<Periodo>();
     }
 
+    public int getAno() {
+        return ano;
+    }
+
+    public int getSemestre() {
+        return semestre;
+    }
+
+    public List<Periodo> getDatas() {
+        return datas;
+    }
 
     @Override
     public BaseData getInfo() {
