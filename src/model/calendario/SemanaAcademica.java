@@ -60,27 +60,33 @@ public class SemanaAcademica extends BaseData implements ServiceInterface {
             jsonObject = (JSONObject) parser.parse(new FileReader(
                     fileName));
 
-            //Salva nas variaveis os dados retirados do arquivo
-            ano = jsonObject.get("ano") != null ? (Long) jsonObject.get("ano") : 0;
-            semestre = jsonObject.get("semestre") != null ? (Long) jsonObject.get("semestre") : 0;
-            initialDate = LocalDate.parse((String) jsonObject.get("dataInicio"));
-            finalDate = LocalDate.parse((String) jsonObject.get("dataTermino"));
-            List<JSONObject> jsonList = (ArrayList<JSONObject>) jsonObject.get("events");
+            List<JSONObject> jsonList = new ArrayList<>();
+
+            if(jsonObject != null) {
+                //Salva nas variaveis os dados retirados do arquivo
+                ano = jsonObject.get("ano") != null ? (Long) jsonObject.get("ano") : 0;
+                semestre = jsonObject.get("semestre") != null ? (Long) jsonObject.get("semestre") : 0;
+                initialDate = LocalDate.parse((String) jsonObject.get("dataInicio"));
+                finalDate = LocalDate.parse((String) jsonObject.get("dataTermino"));
+                jsonList = (ArrayList<JSONObject>) jsonObject.get("events");
+            }
 
             events = new ArrayList<Evento>();
 
-            for(int i = 0; i < jsonList.size(); i ++) {
-                String nome = (String) jsonList.get(i).get("nome");
-                String descricao = (String) jsonList.get(i).get("descricao");
-                LocalDate data = LocalDate.parse((String) jsonList.get(i).get("data"));
-                LocalTime time = LocalTime.parse((String) jsonList.get(i).get("time"));
-                List<String> hosts = (List<String>) jsonList.get(i).get("hosts");
+            if(jsonList != null) {
+                for(int i = 0; i < jsonList.size(); i ++) {
+                    String nome = (String) jsonList.get(i).get("nome");
+                    String descricao = (String) jsonList.get(i).get("descricao");
+                    LocalDate data = LocalDate.parse((String) jsonList.get(i).get("data"));
+                    LocalTime time = LocalTime.parse((String) jsonList.get(i).get("time"));
+                    List<String> hosts = (List<String>) jsonList.get(i).get("hosts");
 
-                Evento e = new Evento(nome, descricao, data, time, hosts);
-                events.add(e);
+                    Evento e = new Evento(nome, descricao, data, time, hosts);
+                    events.add(e);
+                }
             }
-            //Trata as exceptions que podem ser lançadas no decorrer do processo
         }
+        //Trata as exceptions que podem ser lançadas no decorrer do processo
         catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

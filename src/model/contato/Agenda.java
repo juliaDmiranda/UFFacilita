@@ -39,21 +39,28 @@ public class Agenda extends BaseData implements ServiceInterface {
                     fileName));
 
             //Salva nas variaveis os dados retirados do arquivo
-            List<JSONObject> jsonList = (ArrayList<JSONObject>) jsonObject.get("contatos");
+            List<JSONObject> jsonList = new ArrayList<>();
+
+            if(jsonObject != null) {
+               jsonList = (ArrayList<JSONObject>) jsonObject.get("contatos");
+            }
 
             contatos = new ArrayList<Contato>();
 
-            for (int i = 0; i < jsonList.size(); i++) {
-                String tipo = (String) jsonList.get(i).get("tipo");
-                String nome = (String) jsonList.get(i).get("nome");
-                String email = (String) jsonList.get(i).get("email");
-                String telefone = (String) jsonList.get(i).get("telefone");
+            if (jsonList != null) {
+                for (int i = 0; i < jsonList.size(); i++) {
+                    String tipo = (String) jsonList.get(i).get("tipo");
+                    String nome = (String) jsonList.get(i).get("nome");
+                    String email = (String) jsonList.get(i).get("email");
+                    String telefone = (String) jsonList.get(i).get("telefone");
 
-                Contato c = new Contato(tipo, nome, email, telefone);
-                contatos.add(c);
+                    Contato c = new Contato(tipo, nome, email, telefone);
+                    contatos.add(c);
+                }
             }
-            //Trata as exceptions que podem ser lançadas no decorrer do processo
-        } catch (FileNotFoundException e) {
+        }
+        //Trata as exceptions que podem ser lançadas no decorrer do processo
+        catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();

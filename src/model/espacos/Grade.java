@@ -18,6 +18,11 @@ public class Grade extends BaseData implements ServiceInterface {
     String semestreVigente;
     List<Disciplina> disciplinas;
 
+    public Grade(String semestreVigente) {
+        this.semestreVigente = semestreVigente;
+        this.disciplinas = new ArrayList<Disciplina>();
+    }
+
     public String getSemestreVigente() {
         return semestreVigente;
     }
@@ -41,25 +46,28 @@ public class Grade extends BaseData implements ServiceInterface {
             jsonObject = (JSONObject) parser.parse(new FileReader(
                     fileName));
 
-            //Salva nas variaveis os dados retirados do arquivo
-            semestreVigente = (String) jsonObject.get("semestre");
-            List<JSONObject> jsonList = (ArrayList<JSONObject>) jsonObject.get("disciplinas");
-
-            disciplinas = new ArrayList<Disciplina>();
-
-            for(int i = 0; i < jsonList.size(); i ++) {
-                String professor = (String) jsonList.get(i).get("professor");
-                String nome = (String) jsonList.get(i).get("nome");
-                String horario = (String) jsonList.get(i).get("horario");
-                int numero = jsonList.get(i).get("numero") != null ? (int) jsonList.get(i).get("numero") : 0;
-                int andar = jsonList.get(i).get("andar") != null ? (int) jsonList.get(i).get("andar") : 0;
-                Sala sala = new Sala(numero, andar);
-
-                Disciplina d = new Disciplina(professor, nome, horario, sala);
-                disciplinas.add(d);
+            List<JSONObject> jsonList = new ArrayList<>();
+            if(jsonObject != null) {
+                //Salva nas variaveis os dados retirados do arquivo
+                semestreVigente = (String) jsonObject.get("semestre");
+                jsonList = (ArrayList<JSONObject>) jsonObject.get("disciplinas");
             }
-            //Trata as exceptions que podem ser lançadas no decorrer do processo
+
+            if(jsonList != null) {
+                for(int i = 0; i < jsonList.size(); i ++) {
+                    String professor = (String) jsonList.get(i).get("professor");
+                    String nome = (String) jsonList.get(i).get("nome");
+                    String horario = (String) jsonList.get(i).get("horario");
+                    int numero = jsonList.get(i).get("numero") != null ? (int) jsonList.get(i).get("numero") : 0;
+                    int andar = jsonList.get(i).get("andar") != null ? (int) jsonList.get(i).get("andar") : 0;
+                    Sala sala = new Sala(numero, andar);
+
+                    Disciplina d = new Disciplina(professor, nome, horario, sala);
+                    disciplinas.add(d);
+                }
+            }
         }
+        //Trata as exceptions que podem ser lançadas no decorrer do processo
         catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
