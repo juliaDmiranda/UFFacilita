@@ -1,4 +1,4 @@
 package model;
 
-public class BaseData {
+public abstract class BaseData {
 }
