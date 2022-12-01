@@ -1,16 +1,100 @@
 {
 	"contatos": [
         {
-        "tipo" 	:"",
-        "nome" 	:"",
-        "email"	:"",
-        "telefone":""
+        "tipo" 	   : "Professor",
+        "nome" 	   : "Carlos Bazilio Martins",
+        "email"	   : "carlosbazilio@id.uff.br",
+        "telefone" : ""
         },
         {
-        "tipo" 	:"",
-        "nome" 	:"",
-        "email"	:"",
-        "telefone"	:""
+        "tipo"     : "Professor",
+        "nome"     : "Leila Weitzel" ,
+        "email"    : "leila_weitzel@id.uff.br",
+        "telefone" : ""
+        },
+        {
+        "tipo"     : "Professor",
+        "nome"     : "Danilo Artigas" ,
+        "email"    : "daniloartigas@id.uff.br",
+        "telefone" : ""
+        },
+        {
+        "tipo"     : "Professor",
+        "nome"     : "Andre Renato Villela Da Silva" ,
+        "email"    : "arvsilva@id.uff.br",
+        "telefone" : ""
+        },
+        {
+        "tipo"     : "Professor",
+        "nome"     : "Sérgio Crespo" ,
+        "email"    : "crespo.sergio@gmail.com",
+        "telefone" : ""
+        },
+        {
+        "tipo"     : "Professor",
+        "nome"     : "Maise Dantas" ,
+        "email"    : "maisedantas@gmail.com",
+        "telefone" : ""
+        },
+        {
+        "tipo"     : "Professor",
+        "nome"     : "Adriana Medeiros" ,
+        "email"    : "adrianamedeiros@id.uff.br",
+        "telefone" : ""
+        },
+        {
+        "tipo"     : "Professor",
+        "nome"     : "Alessandro Copetti" ,
+        "email"    : "alessandro.copetti@gmail.com",
+        "telefone" : ""
+        },
+        {
+        "tipo"     : "Professor",
+        "nome"     : "Marcilene De Fatima Dianin Vianna" ,
+        "email"    : "marcilenedianin@id.uff.br",
+        "telefone" :""
+        },
+        {
+        "tipo"     : "Professor",
+        "nome"     : "Marcos Ribeiro Quinet De Andrade" ,
+        "email"    :"marcos_quinet@id.uff.br",
+        "telefone" :""
+        },
+        {
+        "tipo"     : "Professor",
+        "nome"     : "Leonardo Carvalho" ,
+        "email"    :"leocarvalho84@gmail.com",
+        "telefone" :""
+        },
+        {
+        "tipo"     : "Professor",
+        "nome"     : "Dalessandro Vianna",
+        "email"    :"dalessandrovianna@id.uff.br",
+        "telefone" :""
+        },
+        {
+        "tipo"     : "Professor",
+        "nome"     : "Fabio Freitas Ferreira" ,
+        "email"    :"fabiofreitasferreira@id.uff.br",
+        "telefone" :""
+        },
+        {
+        "tipo"     : "Professor",
+        "nome"     : "Reginaldo Demarque Da Rocha" ,
+        "email"    :"reginaldodr@id.uff.br",
+        "telefone" :""
+        },
+        {
+        "tipo"     : "Professor",
+        "nome"     : "Fernando Naufel" ,
+        "email"    :"fnaufel@gmail.com",
+        "telefone" :""
+        },
+        {
+        "tipo"     : "Professor",
+        "nome"     : "Romulo Rosa",
+        "email"    :"romulorosa@id.uff.b",
+        "telefone" :""
         }
     ]
 }
