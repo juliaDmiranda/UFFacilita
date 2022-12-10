@@ -2,30 +2,30 @@
   "semestre" : "2022.2",
   "disciplinas" : [
     {
-      "professor" : "",
-      "nome" : "asdas",
-      "horario" : "",
+      "professor" : "Sérgio Crespo",
+      "nome" : "Interface Humano-Computador",
+      "horario" : "Qua: 14:00/16:00, Qui: 16:00/18:00 ",
       "sala" : {
-        "numero" : 1,
-        "andar" : 1
+        "numero" : "6, 5",
+        "andar" : "2, 2"
       }
     },
     {
       "professor" : "",
-      "nome" : "gfwer",
-      "horario" : "",
+      "nome" : "Técnicas de Programação Avançada",
+      "horario" : "Qua: 11:00/13:00, Qui: 14:00/16:00 ",
       "sala" : {
-        "numero" : 1,
-        "andar" : 1
+        "numero" : "2, 8,",
+        "andar" : "1, 2"
       }
     },
     {
       "professor" : "",
-      "nome" : "qweq",
-      "horario" : "",
+      "nome" : "Redes de Computadores II",
+      "horario" : "Seg: 09:00/11:00, Qua: 09:00/11:00",
       "sala" : {
-        "numero" : 1,
-        "andar" : 1
+        "numero" : "7",
+        "andar" : "2"
       }
     }
   ]
