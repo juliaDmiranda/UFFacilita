@@ -6,8 +6,8 @@
       "nome" : "Interface Humano-Computador",
       "horario" : "Qua: 14:00/16:00",
       "sala" : {
-        "numero" : "6",
-        "andar" : "2"
+        "numero" : 6,
+        "andar" : 2
       }
     },
     {
@@ -15,8 +15,8 @@
       "nome" : "Interface Humano-Computador",
       "horario" : "Qui: 16:00/18:00 ",
       "sala" : {
-        "numero" : "5",
-        "andar" : "1"
+        "numero" : 5,
+        "andar" : 1
       }
     },
     {
@@ -24,8 +24,8 @@
       "nome" : "Técnicas de Programação Avançada",
       "horario" : "Qua: 11:00/13:00",
       "sala" : {
-        "numero" : "2",
-        "andar" : "1"
+        "numero" : 2,
+        "andar" : 1
       }
     },
     {
@@ -33,8 +33,8 @@
       "nome" : "Técnicas de Programação Avançada",
       "horario" : "Qui: 14:00/16:00",
       "sala" : {
-        "numero" : "8,",
-        "andar" : "2"
+        "numero" : 8,
+        "andar" : 2
       }
     },
     {
@@ -42,8 +42,8 @@
       "nome" : "Redes de Computadores II",
       "horario" : "Seg: 09:00/11:00",
       "sala" : {
-        "numero" : "7",
-        "andar" : "2"
+        "numero" : 7,
+        "andar" : 2
       }
     },
     {
@@ -51,8 +51,8 @@
       "nome" : "Redes de Computadores II",
       "horario" : "Qua: 09:00/11:00",
       "sala" : {
-        "numero" : "7",
-        "andar" : "2"
+        "numero" : 7,
+        "andar" : 2
       }
     },
     {
@@ -60,8 +60,8 @@
       "nome" : "Compiladores",
       "horario" : "Ter: 16:00/18:00",
       "sala" : {
-        "numero" : "3",
-        "andar" : "1"
+        "numero" : 3,
+        "andar" : 1
       }
     },
     {
@@ -69,8 +69,8 @@
       "nome" : "Compiladores",
       "horario" : "Sex: 16:00/18:00",
       "sala" : {
-        "numero" : "8",
-        "andar" : "2"
+        "numero" : 8,
+        "andar" : 2
       }
     }
   ]
