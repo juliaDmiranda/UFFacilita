@@ -14,7 +14,7 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SemanaAcademica extends BaseData implements ServiceInterface {
+public class SemanaAcademica extends BaseData {
     private Long ano, semestre;
     private LocalDate initialDate, finalDate;
     private List<Evento> events;

@@ -13,7 +13,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-public class Agenda extends BaseData implements ServiceInterface {
+public class Agenda extends BaseData {
     private List<Contato> contatos;
 
     public Agenda() {

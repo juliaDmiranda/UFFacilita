@@ -2,7 +2,7 @@ package model.espacos;
 
 import model.BaseData;
 
-public class Disciplina extends BaseData {
+public class Disciplina {
     private String professor, nome, horario;
     private Sala sala;
 

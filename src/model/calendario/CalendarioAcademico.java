@@ -14,7 +14,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CalendarioAcademico extends BaseData implements ServiceInterface {
+public class CalendarioAcademico extends BaseData {
     private int ano, semestre;
     private List<Periodo> datas;
 

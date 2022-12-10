@@ -1,4 +1,4 @@
 package model;
 
-public abstract class BaseData {
+public abstract class BaseData implements ServiceInterface{
 }

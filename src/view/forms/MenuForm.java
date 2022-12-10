@@ -38,7 +38,7 @@ public class MenuForm {
         consultarGradeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(agendaFrame == null) {
+                if(gradeFrame == null) {
                     gradeFrame = new JFrame("GradeForm");
                     gradeFrame.setContentPane(new GradeForm().panelGrade);
                     gradeFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
