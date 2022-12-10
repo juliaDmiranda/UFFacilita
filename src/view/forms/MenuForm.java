@@ -14,14 +14,21 @@ public class MenuForm {
     private JButton consultarCalendárioButton;
     private JLabel logoICT;
 
+    public static JFrame calendarioFrame;
+    public static JFrame semanaAcademicaFrame;
+    public static JFrame gradeFrame;
+    public static JFrame agendaFrame;
+
     public MenuForm() {
         consultarContatosButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame agendaFrame = new JFrame("AgendaForm");
-                agendaFrame.setContentPane(new AgendaForm().panelAgenda);
-                agendaFrame.pack();
-                agendaFrame.setLocationRelativeTo(null);
+                if(agendaFrame == null) {
+                    agendaFrame = new JFrame("AgendaForm");
+                    agendaFrame.setContentPane(new AgendaForm().panelAgenda);
+                    agendaFrame.pack();
+                    agendaFrame.setLocationRelativeTo(null);
+                }
                 agendaFrame.setVisible(true);
                 App.menuFrame.dispose();
             }
@@ -29,13 +36,14 @@ public class MenuForm {
         consultarGradeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame gradeFrame = new JFrame("GradeForm");
-                gradeFrame.setContentPane(new GradeForm().panelGrade);
-                gradeFrame.pack();
-                gradeFrame.setLocationRelativeTo(null);
+                if(agendaFrame == null) {
+                    gradeFrame = new JFrame("GradeForm");
+                    gradeFrame.setContentPane(new GradeForm().panelGrade);
+                    gradeFrame.pack();
+                    gradeFrame.setLocationRelativeTo(null);
+                }
                 gradeFrame.setVisible(true);
                 App.menuFrame.dispose();
-
             }
         });
 
@@ -43,11 +51,27 @@ public class MenuForm {
         consultarCalendárioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame calendarioFrame = new JFrame("CalendariForm");
-                calendarioFrame.setContentPane(new CalendarioForm().panelCalendario);
-                calendarioFrame.pack();
-                calendarioFrame.setLocationRelativeTo(null);
+                if(calendarioFrame == null)
+                {
+                    calendarioFrame = new JFrame("CalendarioForm");
+                    calendarioFrame.setContentPane(new CalendarioForm().panelCalendario);
+                    calendarioFrame.pack();
+                    calendarioFrame.setLocationRelativeTo(null);
+                }
                 calendarioFrame.setVisible(true);
+                App.menuFrame.dispose();
+            }
+        });
+        consultarSemanaAcadêmicaButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(semanaAcademicaFrame == null) {
+                    semanaAcademicaFrame = new JFrame("SemanaAcademicaForm");
+                    semanaAcademicaFrame.setContentPane(new SemanaAcademicaForm().panelSemanaAcademica);
+                    semanaAcademicaFrame.pack();
+                    semanaAcademicaFrame.setLocationRelativeTo(null);
+                }
+                semanaAcademicaFrame.setVisible(true);
                 App.menuFrame.dispose();
             }
         });
