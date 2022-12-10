@@ -1,14 +1,14 @@
 {
     "ano" : 2022,
     "semestre" : 2,
-    "initialDate" : "17/11/2022",
-    "finalDate" : "22/11/2022",
+    "initialDate" : "2022-11-17",
+    "finalDate" : "2022-11-22",
     "events" :
     [
         {
             "nome":"MiniCurso Git 1 - O que é e Primeiros passos",
             "descricao" :"MiniCurso Git 1 - O que é e Primeiros passos",
-            "data" : "19/11/2022",
+            "data" : "2022-11-19",
             "time" : "9:00/11:00",
             "hosts" :
             [
@@ -18,7 +18,7 @@
         {
             "nome":"MiniCurso 'Seja Fit, Programe Funcionalmente'",
             "descricao" :"MiniCurso 'Seja Fit, Programe Funcionalmente'",
-            "data" : "18/11/2022",
+            "data" : "2022-11-18",
             "time" : "9:00/13:00",
             "hosts" :
             [
@@ -28,7 +28,7 @@
         {
             "nome":"MiniCurso 'Seja Fit, Programe Funcionalmente'",
             "descricao" :"MiniCurso 'Seja Fit, Programe Funcionalmente'",
-            "data" : "18/11/2022",
+            "data" : "2022-11-18",
             "time" : "14:00/18:00",
             "hosts" :
             [
@@ -38,7 +38,7 @@
         {
             "nome": "Desenvolvimento de metodologia para manutenção baseada em condição para BOP",
             "descricao" : "Desenvolvimento de metodologia para manutenção baseada em condição para BOP",
-            "data" : "18/11/2022",
+            "data" : "2022-11-18",
             "time" : "14:00/18:00",
             "hosts" :
             [
