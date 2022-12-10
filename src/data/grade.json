@@ -16,11 +16,11 @@
       "horario" : "Qui: 16:00/18:00 ",
       "sala" : {
         "numero" : "5",
-        "andar" : "2"
+        "andar" : "1"
       }
     },
     {
-      "professor" : "",
+      "professor" : "André Renato",
       "nome" : "Técnicas de Programação Avançada",
       "horario" : "Qua: 11:00/13:00",
       "sala" : {
@@ -29,7 +29,7 @@
       }
     },
     {
-      "professor" : "",
+      "professor" : "André Renato",
       "nome" : "Técnicas de Programação Avançada",
       "horario" : "Qui: 14:00/16:00",
       "sala" : {
@@ -38,7 +38,7 @@
       }
     },
     {
-      "professor" : "",
+      "professor" : "Leandro Soares",
       "nome" : "Redes de Computadores II",
       "horario" : "Seg: 09:00/11:00",
       "sala" : {
@@ -47,11 +47,29 @@
       }
     },
     {
-      "professor" : "",
+      "professor" : "Leandro Soares",
       "nome" : "Redes de Computadores II",
       "horario" : "Qua: 09:00/11:00",
       "sala" : {
         "numero" : "7",
+        "andar" : "2"
+      }
+    },
+    {
+      "professor" : "Carlos Bazílio",
+      "nome" : "Compiladores",
+      "horario" : "Ter: 16:00/18:00",
+      "sala" : {
+        "numero" : "3",
+        "andar" : "1"
+      }
+    },
+    {
+      "professor" : "Carlos Bazílio",
+      "nome" : "Compiladores",
+      "horario" : "Sex: 16:00/18:00",
+      "sala" : {
+        "numero" : "8",
         "andar" : "2"
       }
     }
