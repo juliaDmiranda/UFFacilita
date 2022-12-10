@@ -9,9 +9,14 @@ import java.util.List;
 public class SemanaAcademicaCached implements ServiceInterface {
     private SemanaAcademica semanaAcademica;
 
+    public SemanaAcademicaCached() {
+        semanaAcademica = (SemanaAcademica) getInfo();
+    }
+
     @Override
     public BaseData getInfo() {
         if(semanaAcademica == null)
+            semanaAcademica = new SemanaAcademica();
             semanaAcademica = (SemanaAcademica) semanaAcademica.getInfo();
 
         return semanaAcademica;

@@ -9,6 +9,10 @@ import java.util.List;
 public class GradeController {
     public GradeCached gradeCached;
 
+    public GradeController() {
+        gradeCached = new GradeCached();
+    }
+
     public List<Disciplina> getDisciplinasByName(String name) {
         ArrayList<Disciplina> disciplinas = (ArrayList<Disciplina>) gradeCached.getDisciplinas();
 
@@ -17,7 +21,7 @@ public class GradeController {
             if(d.getNome().toLowerCase().contains(name.toLowerCase()))
                 disciplinasNome.add(d);
         }
-        return disciplinas;
+        return disciplinasNome;
     }
 
     public List<Disciplina> getDisciplinasByProfessor(String professor) {

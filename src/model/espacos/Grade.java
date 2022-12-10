@@ -18,8 +18,7 @@ public class Grade extends BaseData implements ServiceInterface {
     String semestreVigente;
     List<Disciplina> disciplinas;
 
-    public Grade(String semestreVigente) {
-        this.semestreVigente = semestreVigente;
+    public Grade() {
         this.disciplinas = new ArrayList<Disciplina>();
     }
 
@@ -58,8 +57,15 @@ public class Grade extends BaseData implements ServiceInterface {
                     String professor = (String) jsonList.get(i).get("professor");
                     String nome = (String) jsonList.get(i).get("nome");
                     String horario = (String) jsonList.get(i).get("horario");
-                    int numero = jsonList.get(i).get("numero") != null ? (int) jsonList.get(i).get("numero") : 0;
-                    int andar = jsonList.get(i).get("andar") != null ? (int) jsonList.get(i).get("andar") : 0;
+
+                    JSONObject salaObject = (JSONObject) jsonList.get(i).get("sala");
+                    int numero = 0;
+                    int andar = 0;
+                    if(salaObject != null) {
+                        numero = salaObject.get("numero") != null ? ((Long)salaObject.get("numero")).intValue() : 0;
+                        andar = salaObject.get("andar") != null ? ((Long)salaObject.get("andar")).intValue() : 0;
+
+                    }
                     Sala sala = new Sala(numero, andar);
 
                     Disciplina d = new Disciplina(professor, nome, horario, sala);

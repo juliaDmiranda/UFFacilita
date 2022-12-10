@@ -9,10 +9,15 @@ public class CalendarioAcademicoCached implements ServiceInterface {
 
     private CalendarioAcademico calendarioAcademico;
 
+    public CalendarioAcademicoCached() {
+        calendarioAcademico = (CalendarioAcademico) getInfo();
+    }
+
 
     @Override
     public BaseData getInfo() {
         if(calendarioAcademico == null)
+            calendarioAcademico = new CalendarioAcademico();
             calendarioAcademico = (CalendarioAcademico) calendarioAcademico.getInfo();
 
         return calendarioAcademico;

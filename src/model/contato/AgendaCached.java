@@ -9,9 +9,14 @@ public class AgendaCached implements ServiceInterface {
 
     private Agenda agenda;
 
+    public AgendaCached() {
+        agenda = (Agenda) getInfo();
+    }
+
     @Override
     public BaseData getInfo() {
         if(agenda == null)
+            agenda = new Agenda();
             agenda = (Agenda) agenda.getInfo();
 
         return agenda;

@@ -10,6 +10,10 @@ import java.util.List;
 public class AgendaController {
     public AgendaCached agendaCached;
 
+    public AgendaController() {
+        agendaCached = new AgendaCached();
+    }
+
     public List<Contato> getContatosByName(String name) {
         ArrayList<Contato> contatos = (ArrayList<Contato>) agendaCached.getContatos();
 

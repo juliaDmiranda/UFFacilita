@@ -9,6 +9,10 @@ import java.util.List;
 public class CalendarioAcademicoController {
     private CalendarioAcademicoCached calendarioAcademicoCached;
 
+    public CalendarioAcademicoController() {
+        calendarioAcademicoCached = new CalendarioAcademicoCached();
+    }
+
     public List<Periodo> getDataByName(String name) {
         ArrayList<Periodo> datas = (ArrayList<Periodo>) calendarioAcademicoCached.getDatas();
 

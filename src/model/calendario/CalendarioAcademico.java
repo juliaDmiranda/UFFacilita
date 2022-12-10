@@ -18,9 +18,7 @@ public class CalendarioAcademico extends BaseData implements ServiceInterface {
     private int ano, semestre;
     private List<Periodo> datas;
 
-    public CalendarioAcademico(int ano, int semestre) {
-        this.ano = ano;
-        this.semestre = semestre;
+    public CalendarioAcademico() {
         this.datas    = new ArrayList<Periodo>();
     }
 
@@ -56,8 +54,8 @@ public class CalendarioAcademico extends BaseData implements ServiceInterface {
 
             if(jsonObject != null) {
                 //Salva nas variaveis os dados retirados do arquivo
-                ano = jsonObject.get("ano") != null ? (int) jsonObject.get("ano") : 0;
-                semestre = jsonObject.get("semestre") != null ? (int) jsonObject.get("semestre") : 0;
+                ano = jsonObject.get("ano") != null ? ((Long)jsonObject.get("ano")).intValue() : 0;
+                semestre = jsonObject.get("semestre") != null ? ((Long)jsonObject.get("semestre")).intValue() : 0;
                 jsonList = (ArrayList<JSONObject>) jsonObject.get("datas");
             }
 

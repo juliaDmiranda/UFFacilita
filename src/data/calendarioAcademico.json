@@ -1,24 +1,24 @@
 {
-  "ano" : 2022,
-  "semestre" : 2,
+  "ano" : 2023,
+  "semestre" : 1,
   "datas" : [
     {
-      "nome" : "",
-      "descricao" : "",
-      "dataInicio" : "",
-      "dataTermino" : ""
+      "nome" : "Início do Período",
+      "descricao" : "Início do período letivo",
+      "dataInicio" : "2023-04-10",
+      "dataTermino" : "2023-04-10"
     },
     {
-      "nome" : "",
-      "descricao" : "",
-      "dataInicio" : "",
-      "dataTermino" : ""
+      "nome" : "Fim do Período",
+      "descricao" : "Fim do período letivo",
+      "dataInicio" : "2024-01-10",
+      "dataTermino" : "2024-01-10"
     },
     {
-      "nome" : "",
-      "descricao" : "",
-      "dataInicio" : "",
-      "dataTermino" : ""
+      "nome" : "Inscrição em Disciplinas",
+      "descricao" : "Período de inscrição em disciplinas",
+      "dataInicio" : "2023-03-20",
+      "dataTermino" : "2023-04-07"
     }
   ]
 }

@@ -9,6 +9,10 @@ import java.util.List;
 public class SemanaAcademicaController{
     public SemanaAcademicaCached semanaAcademicaCached;
 
+    public SemanaAcademicaController() {
+        semanaAcademicaCached = new SemanaAcademicaCached();
+    }
+
     public List<Evento> getEventoByName(String name) {
         ArrayList<Evento> eventos = (ArrayList<Evento>) semanaAcademicaCached.getEvents();
 

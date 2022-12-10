@@ -7,12 +7,12 @@ import java.util.List;
 public class Evento {
     String name, description;
     LocalDate date;
-    LocalTime time;
+    String time;
     List<String> hosts;
     
     public Evento(){}
 
-    public Evento(String _name, String _description, LocalDate _date, LocalTime _time, List<String> _hosts){
+    public Evento(String _name, String _description, LocalDate _date, String _time, List<String> _hosts){
         name        = _name;
         description = _description;
         date        = _date;
@@ -31,7 +31,7 @@ public class Evento {
     public String getName() {
         return name;
     }
-    public LocalTime getTime() {
+    public String getTime() {
         return time;
     }
 }

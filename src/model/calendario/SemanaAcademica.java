@@ -19,9 +19,7 @@ public class SemanaAcademica extends BaseData implements ServiceInterface {
     private LocalDate initialDate, finalDate;
     private List<Evento> events;
     
-    public SemanaAcademica(LocalDate _initialDate, LocalDate _finalDate){
-        initialDate = _initialDate;
-        finalDate =  _finalDate;
+    public SemanaAcademica(){
         events  = new ArrayList<Evento>();
     }
 
@@ -66,8 +64,8 @@ public class SemanaAcademica extends BaseData implements ServiceInterface {
                 //Salva nas variaveis os dados retirados do arquivo
                 ano = jsonObject.get("ano") != null ? (Long) jsonObject.get("ano") : 0;
                 semestre = jsonObject.get("semestre") != null ? (Long) jsonObject.get("semestre") : 0;
-                initialDate = LocalDate.parse((String) jsonObject.get("dataInicio"));
-                finalDate = LocalDate.parse((String) jsonObject.get("dataTermino"));
+                initialDate = LocalDate.parse((String) jsonObject.get("initialDate"));
+                finalDate = LocalDate.parse((String) jsonObject.get("finalDate"));
                 jsonList = (ArrayList<JSONObject>) jsonObject.get("events");
             }
 
@@ -78,7 +76,7 @@ public class SemanaAcademica extends BaseData implements ServiceInterface {
                     String nome = (String) jsonList.get(i).get("nome");
                     String descricao = (String) jsonList.get(i).get("descricao");
                     LocalDate data = LocalDate.parse((String) jsonList.get(i).get("data"));
-                    LocalTime time = LocalTime.parse((String) jsonList.get(i).get("time"));
+                    String time = (String) jsonList.get(i).get("time");
                     List<String> hosts = (List<String>) jsonList.get(i).get("hosts");
 
                     Evento e = new Evento(nome, descricao, data, time, hosts);

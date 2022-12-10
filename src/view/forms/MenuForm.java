@@ -13,6 +13,7 @@ public class MenuForm {
     private JButton consultarGradeButton;
     private JButton consultarCalendárioButton;
     private JLabel logoICT;
+    private JLabel logoApp;
 
     public static JFrame calendarioFrame;
     public static JFrame semanaAcademicaFrame;
@@ -26,6 +27,7 @@ public class MenuForm {
                 if(agendaFrame == null) {
                     agendaFrame = new JFrame("AgendaForm");
                     agendaFrame.setContentPane(new AgendaForm().panelAgenda);
+                    agendaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     agendaFrame.pack();
                     agendaFrame.setLocationRelativeTo(null);
                 }
@@ -39,6 +41,7 @@ public class MenuForm {
                 if(agendaFrame == null) {
                     gradeFrame = new JFrame("GradeForm");
                     gradeFrame.setContentPane(new GradeForm().panelGrade);
+                    gradeFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     gradeFrame.pack();
                     gradeFrame.setLocationRelativeTo(null);
                 }
@@ -55,6 +58,7 @@ public class MenuForm {
                 {
                     calendarioFrame = new JFrame("CalendarioForm");
                     calendarioFrame.setContentPane(new CalendarioForm().panelCalendario);
+                    calendarioFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     calendarioFrame.pack();
                     calendarioFrame.setLocationRelativeTo(null);
                 }
@@ -68,6 +72,7 @@ public class MenuForm {
                 if(semanaAcademicaFrame == null) {
                     semanaAcademicaFrame = new JFrame("SemanaAcademicaForm");
                     semanaAcademicaFrame.setContentPane(new SemanaAcademicaForm().panelSemanaAcademica);
+                    semanaAcademicaFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     semanaAcademicaFrame.pack();
                     semanaAcademicaFrame.setLocationRelativeTo(null);
                 }

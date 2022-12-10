@@ -8,9 +8,14 @@ import java.util.List;
 public class GradeCached implements ServiceInterface {
     private Grade grade;
 
+    public GradeCached() {
+        grade = (Grade) getInfo();
+    }
+
     @Override
     public BaseData getInfo() {
         if(grade == null)
+            grade = new Grade();
             grade = (Grade) grade.getInfo();
 
         return grade;
